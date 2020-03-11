@@ -52,11 +52,11 @@
             }
             &.previous {
                 left: 0;
-                padding-left: 50px;
+                padding-left: 22vw;
             }
             &.next {
                 right: 0;
-                padding-right: 50px;
+                padding-right: 22vw;
             }
         }
     }
