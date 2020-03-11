@@ -1,5 +1,5 @@
 <template>
-    <div id="schedule" class="schedule">
+    <div id="schedule" class="schedule" v-touch:swipe.left="nextDay" v-touch:swipe.right="previousDay">
         <div class="previous arrow" @click="previousDay"><img src="../assets/back.svg" alt=""></div>
         <div class="next arrow" @click="nextDay"><img src="../assets/right.svg" alt=""></div>
         <Day v-for="(day, key) in data" :day-number="key" :data="day" :key="key" v-if="key == selectedDay"></Day>
