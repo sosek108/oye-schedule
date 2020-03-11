@@ -47,16 +47,25 @@
             width: 30px;
             cursor: pointer;
             position: absolute;
+            -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
             img {
                 width: 100%
             }
             &.previous {
                 left: 0;
                 padding-left: 22vw;
+                transition: all 0.2s;
+                &:active {
+                    padding-left: 20vw;
+                };
             }
             &.next {
                 right: 0;
                 padding-right: 22vw;
+                transition: all 0.2s;
+                &:active {
+                    padding-right: 20vw;
+                };
             }
         }
     }
