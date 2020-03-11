@@ -92,7 +92,12 @@ class CurlSchedule
 
                 $dayCourses = array_merge($dayCourses, $courses);
             }
-
+            usort($dayCourses, function($a,$b) {
+                if ($a['hour'] === $b['hour']) {
+                    return 0;
+                }
+                return $a['hour'] > $b['hour'];
+            });
             $response[$dayName] = $dayCourses;
         }
         return $response;

@@ -1,7 +1,7 @@
 <template>
     <div class="day">
         <div class="day__name">{{name}}</div>
-        <Course v-for="c,k in sorted" :course="c" :key="k"></Course>
+        <Course v-for="c,k in data" :course="c" :key="k"></Course>
     </div>
 </template>
 
@@ -32,11 +32,6 @@
                     case 4:
                         return "Piątek";
                 }
-            },
-            sorted() {
-                return this.data.sort((a, b) => {
-                    return a.hour > b.hour;
-                })
             }
         }
     }

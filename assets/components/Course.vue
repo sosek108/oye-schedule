@@ -19,8 +19,12 @@
             level() {
                 let level = this.course.level.substring(7);
 
+                if (this.course.name === 'OYE! LOCOS') {
+                    return 'BEST';
+                }
+
                 if (level.toLowerCase() === 'open') {
-                    return 'OPEN'
+                    return 'OPEN';
                 }
 
                 return 'P' + this.course.level.substring(7);
