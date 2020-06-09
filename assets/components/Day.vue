@@ -26,7 +26,7 @@
                     case 1:
                         return "Wtorek";
                     case 2:
-                        return "Środa";
+                        return "Wtorek";
                     case 3:
                         return "Czwartek";
                     case 4:
